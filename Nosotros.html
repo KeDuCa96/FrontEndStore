@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <header class="header">  <!-- Esto sería BEM, class es el bloque -->
+        <a href="index.html"> <!-- Link para ir al inicio.  -->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">  <!-- Seleccionamos el logo y el atributo alt sirve para colocar el nombre en caso tal no se cargue. Logo es el elemento del bloque header -->
+            
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace navegacion__enlace--activo"  href="Nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor"> <!-- crearemos el contenedor -->
+        <h1>SOBRE NOSOTROS</h1>
+
+            <div class="grid--nosotros">
+                <div class="nosotros"> <!-- División para el parrafo -->
+                    <div class="nosotros__contenido">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt amet veritatis nemo tempore repellendus, vero consectetur quisquam molestiae, rerum illo dignissimos. Odit eum commodi in delectus at. Adipisci, vitae?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo incidunt impedit reiciendis minus temporibus quas in excepturi sequi recusandae vel cupiditate, nesciunt esse dolor sit iste laborum dolorem odio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum aliquid eligendi exercitationem, commodi non esse fugiat ab id nihil ex, nostrum saepe repellendus eum soluta? Fuga dolore distinctio obcaecati accusantium.</p>
+                    </div>
+                    <div class="nosotros__imagen">
+                        <img src="img/nosotros.jpg" alt="imagen nosotros">
+                    </div>
+                </div> <!-- fin division para el parrafo -->
+            </div>
+    </main>
+
+    <section class="contenedor comprar">
+        <h2 class="comprar__titulo">PORQUÉ COMPRAR CON NOSOTROS</h2> 
+
+        <div class="bloques">
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_1.png" alt="porque comprar">
+                <h3 class="bloque__titulo">El mejor precio</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, repellendus? Velit praesentium dicta culpa.
+                </p>
+            </div><!-- Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_2.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Para devs</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, repellendus? Velit praesentium dicta culpa.
+                </p>
+            </div><!-- Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_3.png" alt="porque comprar">
+                <h3 class="bloque__titulo">Envio gratis</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, repellendus? Velit praesentium dicta culpa.
+                </p>
+            </div><!-- Bloque -->
+            <div class="bloque">
+                <img class="bloque__imagen" src="img/icono_4.png" alt="porque comprar">
+                <h3 class="bloque__titulo">La mejor calidad</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, repellendus? Velit praesentium dicta culpa.
+                </p>
+            </div><!-- Bloque -->
+        </div><!-- Bloques -->
+    </section>
+
+    <footer class="footer"> <!-- Pie de página -->
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022.</p>
+    </footer>
+</body>
+</html>

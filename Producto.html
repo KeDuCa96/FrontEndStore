@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <header class="header">  <!-- Esto sería BEM, class es el bloque -->
+        <a href="index.html"> <!-- Link para ir al inicio.  -->
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">  <!-- Seleccionamos el logo y el atributo alt sirve para colocar el nombre en caso tal no se cargue. Logo es el elemento del bloque header -->
+            
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="index.html">Tienda</a>
+        <a class="navegacion__enlace"  href="Nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor"> <!-- crearemos el contenedor -->
+        <h1>React JS</h1>
+        
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/3.jpg" alt="Imagen del Producto">
+            <div class="camisa__contenido">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat ab aut quidem assumenda minima, aspernatur sapiente consequatur sunt et repudiandae corporis tempora consectetur voluptatum minus error, placeat doloremque, impedit a.</p>
+
+                <form class="formulario">
+                    <select class="formulario__campo"> <!-- Es para desplegar opciones -->
+                        <option disabled selected>--Seleccionar talla--</option> <!-- Este es el que no podemos seleccionar, pero nos da una indicación. Esto lo logramos con el atributo disable selectted -->
+                        <option value="">Pequeña</option>
+                        <option value="">Mediana</option>
+                        <option value="">Grande</option>
+                    </select>
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1" step=""> <!-- el atributo min sirve para seleccionar una cantidad mínima y el step es para dar pasos, es decir que el número vaya de n en n -->
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> <!-- Pie de página -->
+        <p class="footer__texto">Front End Store - Todos los derechos reservados 2022.</p>
+    </footer>
+</body>
+</html>
